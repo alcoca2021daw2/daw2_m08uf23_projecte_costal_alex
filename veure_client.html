@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veure Usuari</title>
+</head>
+<body>
+    <h1>Veure l'informació del client</h1>
+	<form action="veure_client.php" method="POST">
+		<label for="uid">Escriu l'uid d'un client:</label><br> 
+		<input type="text" name="uid"><br> <br> 
+		<label for="uOrganitzativa">Indica la unitat organitzativa</label><br> 
+		<select name="uOrganitzativa">
+    		<option value="uOrganitzativa=administradors">Administradors</option>
+    		<option value="uOrganitzativa=desenvolupadors">Desenvolupadors</option>
+    		<option value="uOrganitzativa=usuaris">Usuaris</option>
+		</select> 
+		<input type="submit" value="Veure" />
+	</form>
+</body>
+</html>
