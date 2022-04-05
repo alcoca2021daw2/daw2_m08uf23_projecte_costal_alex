@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veure Usuari</title>
-</head>
+<HTML>
+<HEAD>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<TITLE>Us LDAP</TITLE>
+</HEAD>
 <body>
-    <h1>Veure l'informació del client</h1>
-	<form action="veure_client.php" method="POST">
-		<label for="uid">Escriu l'uid d'un client:</label><br> 
-		<input type="text" name="uid"><br> <br> 
-		<label for="uOrganitzativa">Indica la unitat organitzativa</label><br> 
-		<select name="uOrganitzativa">
-    		<option value="uOrganitzativa=administradors">Administradors</option>
-    		<option value="uOrganitzativa=desenvolupadors">Desenvolupadors</option>
-    		<option value="uOrganitzativa=usuaris">Usuaris</option>
+	<p>VEURE INFORMACIÓ USUARI</p>
+	<form action="./veure_client.php" method="POST">
+		<label for="id">Indica el id d'usuari(uid):</label><br> 
+		<input type="text" name="id"><br> <br> 
+		<label for="fname">Indica la unitat organitzativa</label><br> 
+		<select name="tipusUser">
+    		<option value="ou=administradors">Administradors</option>
+    		<option value="ou=desenvolupadors">Desenvolupadors</option>
+    		<option value="ou=usuaris">Usuaris</option>
 		</select> 
-		<input type="submit" value="Veure" />
+		<input type="submit" value="Envia" />
 	</form>
 </body>
-</html>
+</HTML>

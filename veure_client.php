@@ -12,8 +12,8 @@ $opcions = [
 ];
 $ldap = new Ldap($opcions);
 $ldap->bind();
-$id = $_POST["uid"];
-$tipusUser = $_POST["uOrganitzativa"];
+$id = $_POST["id"];
+$tipusUser = $_POST["tipusUser"];
 $usuari = $ldap->getEntry('uid='.$id.','.$tipusUser.',dc=fjeclot,dc=net');
 echo "<b><u>" . $usuari["dn"] . "</b></u><br>";
 foreach ($usuari as $atribut => $dada) {
@@ -21,4 +21,3 @@ foreach ($usuari as $atribut => $dada) {
         echo $atribut . ": " . $dada[0] . '<br>';
 }
 ?>
-  
