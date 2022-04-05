@@ -1,15 +1,15 @@
-<HTML>
-<HEAD>
-<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-<TITLE>Us LDAP</TITLE>
-</HEAD>
-<body>
-	<form class="login" action="./menu.html" method="POST">
-		<label for="fname">Indica el nom d'usuari:</label><br> 
-		<input type="text" readonly value="cn=admin,dc=fjeclot,dc=net" name="usuari"><br><br>
-		<label for="fname">Indica la contrasenya:</label><br> 
-		<input type="password" name="ctsnya"><br><br>
-		<input type="submit" value="Envia" />
-	</form>
-</body>
-</HTML>
+<html>
+	<head>
+		<title>
+			PÀGINA WEB INICIAL DE L'APLICACIÓ
+		</title>
+	</head>
+	<body>
+		<h1> APLICACIÓ D'ACCÉS A BASES DE DADES LDAP</h1>
+		<h2> DAW2 M08UF2 M08UF3 </h2>
+		<h3> Autor: alcoca2021daw2</h3>
+		<h3> Correu: alcoca2021daw2@protonmail.com</h3>
+		<h3> Github: https://github.com/alcoca2021daw2/daw2_m08uf23_projecte_costal_alex.git</h3>
+		<a href="http://zend-alcoca.fjeclot.net/projecte/login.php">Inicia sessió</a>
+	</body>
+</html>
