@@ -16,8 +16,8 @@ $sh=$_POST['Shell'];
 $cn=$_POST['cn'];
 $sn=$_POST['sn'];
 $nom=$_POST['givenName'];
-$mobil=$_POST['PostalAdress'];
-$adressa=$_POST['mobile'];
+$mobil=$_POST['mobile'];
+$adressa=$_POST['PostalAdress'];
 $telefon=$_POST['telephoneNumber'];
 $titol=$_POST['title'];
 $descripcio=$_POST['description'];
@@ -52,7 +52,7 @@ Attribute::setAttribute($nova_entrada, 'title', $titol);
 Attribute::setAttribute($nova_entrada, 'description', $descripcio);
 $dn = 'uid='.$uid.',ou='.$unorg.',dc=fjeclot,dc=net';
 if($ldap->add($dn, $nova_entrada)) echo "Usuari creat";	
-
+?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -65,5 +65,5 @@ if($ldap->add($dn, $nova_entrada)) echo "Usuari creat";
     
     </body>
     </html>
-?>
+
 
