@@ -20,4 +20,6 @@ foreach ($usuari as $atribut => $dada) {
     if ($atribut != "dn")
         echo $atribut . ": " . $dada[0] . '<br>';
 }
+
+
 ?>
